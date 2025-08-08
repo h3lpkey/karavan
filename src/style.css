@@ -1,0 +1,20 @@
+:root{
+  --bg:#111418;
+  --fg:#e6edf3;
+  --accent:#4cc9f0;
+  --accent-2:#f72585;
+  --sand:#b08968;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: radial-gradient(1200px 800px at 70% 10%, #1a1f27 0%, var(--bg) 45%);
+  color:var(--fg);
+}
+#ui{position:fixed;inset:0;pointer-events:none}
+.hud{position:absolute;top:12px;left:12px;display:flex;gap:16px;background:rgba(0,0,0,.35);backdrop-filter:blur(4px);padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.08)}
+.help{position:absolute;bottom:12px;left:12px;opacity:.8;font-size:.9rem;background:rgba(0,0,0,.3);padding:6px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.06)}
+#game{display:block;width:100vw;height:100vh}
+.badge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:14px 18px;border-radius:12px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.1)}
+.button{display:inline-block;margin-top:8px;padding:6px 10px;border-radius:8px;background:var(--accent);color:#041016;text-decoration:none;font-weight:600}
